@@ -19,7 +19,7 @@ The pipeline is grounded in the categorical discovery framework of [Wang & Buehl
 | **hypothesis-stress-test** | Adversarial hypothesis critique. Formalises claims, generates 3-5 counterarguments with severity ratings, searches for contradictory evidence, and rates robustness (robust / promising-but-fragile / weak / undetermined). Verdict is blind-judged, not self-graded. |
 | **experiment-design-review** | Reviews experimental designs: checks controls, suggests ablations ordered by information value, reviews metrics. Includes Value-of-Information discriminant analysis for competing hypotheses, sufficiency-checked proxy metrics for HPC, and a reproducibility checklist. |
 | **cross-field-synthesis** | Translates concepts across fields. Formalises in field-neutral language, builds translation tables, requires four-level formalisation (shared math, quantitative correspondence, testable prediction, qualitative only). Identifies transferable theorems and methods. |
-| **autoresearch** | Autonomous goal-directed iteration loop: modify, verify, keep/discard against any metric. 14 subcommands including core metric loop, debug, fix, security audit, ship, scenario generation, adversarial debate, and orchestrator mode for natural-language goals. **Forked from [karpathy/autoresearch](https://github.com/karpathy/autoresearch) and substantially extended** with orchestrator routing, goal archetypes, predicate-bearing loops, independent verify & overfit guards, and integration with the research-loop pipeline. |
+| **autoresearch** | Autonomous goal-directed iteration loop: modify, verify, keep/discard against any metric. 14 subcommands including core metric loop, debug, fix, security audit, ship, scenario generation, adversarial debate, and orchestrator mode for natural-language goals. **Forked from [uditgoenka/autoresearch](https://github.com/uditgoenka/autoresearch) and substantially extended** with orchestrator routing, goal archetypes, predicate-bearing loops, independent verify & overfit guards, and integration with the research-loop pipeline. |
 
 ### Code Quality
 
@@ -123,7 +123,7 @@ Each stage produces typed artifacts with formal provenance (parents, produced_by
 2. Murphy, K. et al. (2026). [Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models](https://arxiv.org/abs/2608.09696). *arXiv:2608.09696*.
 3. Finzi, M. et al. (2026). [From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence](https://arxiv.org/abs/2601.03220). *arXiv:2601.03220*.
 4. Gopen, G. D. & Swan, J. A. (1990). The Science of Scientific Writing. *American Scientist*, 78(6), 550-558.
-5. Karpathy, A. (2025). [autoresearch](https://github.com/karpathy/autoresearch) — the original autonomous iteration loop that the autoresearch skill in this repo was forked from and extended.
+5. Goenka, U. (2026). [autoresearch](https://github.com/uditgoenka/autoresearch) — the autonomous iteration engine (itself based on Karpathy's original) that the autoresearch skill in this repo was forked from and extended.
 6. Cranmer, K., Brehmer, J. & Louppe, G. (2020). The frontier of simulation-based inference. *PNAS*, 117(48), 30055-30062.
 
 ---
